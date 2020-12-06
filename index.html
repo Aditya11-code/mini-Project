@@ -1,0 +1,388 @@
+<!-- <% <%@page contentType="text/html" pageEncoding="UTF-8"%> %> -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Advance coder</title>
+    <script src="https://kit.fontawesome.com/2c263db564.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style1.css">
+  </head>
+  <body>
+    <button id="myBtn" class="scrollbtn" title="Back to Top" ontouchstart="topFunction()" onclick="topFunction()"><i class="fas fa-chevron-up"></i></button>
+      <div class="loggin" id="loggin" >
+        <h6 onclick="loggin()">
+          Log-in
+          <i class="fas fa-sign-in-alt"></i>
+        </h6>
+      </div>
+    <section id="op-popup" class="op-popup">
+      <div class="form-cont">
+        <span class="cancel" onclick="removePopup()">x</span>
+        <br>
+        <div class="button-cont">
+            <form name="f1" method="post" onsubmit="return validate();" action="login.jsp">
+<!--          <div class="pass">
+            <input type="text" class="user-field " placeholder="Username" name="" value="" name="t1">
+                <input type="text" name="t1">
+          </div>
+          <div class="pass">
+            <input type="password" class="pass-field" placeholder="Password" name="" value="" name="t2">
+<input type="password" name="t2">
+          </div>
+          <div class="submit">
+            <button type="submit" class="submit-btn" name="button">Log-in</button>
+<input type="submit" value="Login">
+          </div>-->
+<div class="pass">
+<input class="user-field " placeholder="UserName" type="text" name="t1">
+</div>
+<div class="pass">
+<input class="user-field" placeholder="Password" type="password" name="t2"><br>
+</div>
+<div class="submit">
+<input type="submit" class="submit-btn" value="Login">
+</div>
+            </form>
+          <div class="fg-pas">
+            <a target="_blank" href="#">Forgot Password?</a>
+          </div>
+        </div>
+        <div class="newuser-cont">
+          <a href="registration.html">
+            <button class="register-btn" type="button" name="button">New User? Register here</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="first-cont">
+      <header>
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.jpg" class="logo-img" alt="">
+              <span class="comp-name">Advance Coder </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-lg-auto">
+                <!-- <li class="nav-item ">
+                  <a class="nav-link" id="home" href="index.html">Home</a>
+                </li> -->
+                <li class="nav-item">
+                  <div class="nav-link" onclick="aboutSection()" id="about">About</div>
+                </li>
+                <li class="nav-item">
+                  <div class="nav-link" onclick="courseSection()" id="target">Groups</div>
+                </li>
+                <li class="nav-item">
+                  <div class="nav-link" onclick="forumSection()" id="course">Forum</div>
+                </li>
+                <li class="nav-item">
+                  <div class="nav-link" onclick="courseSection()" id="Forum">Courses</div>
+                </li>
+                <li class="nav-item">
+                  <div class="nav-link" onclick="contactSection()" id="contact" >Contact</div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <hr>
+    </div>
+    <div class="bg">
+    <section id="home-cont">
+      <div class="main-cont">
+        <div class="content">
+          <h3>Welcome Coder</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua aliqua eiusmod tempor incididunt ut labore et dolore
+            magna aliqua aliqua
+          </p>
+          <div class="num-cont">
+            <div class="inp-num">
+              <input type="text" placeholder="Enter Number" class="user-input-num" name="" value="">
+            </div>
+            <div class="subs-cont">
+              <button type="button" class="submit-num-btn" name="button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about-cont">
+      <h3>Why We?</h3>
+      <div class="video-text">
+        <div class="ytvideo-cont">
+          <iframe  class="youtube" src="https://www.youtube.com/embed/PVxc5mIHVuQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="about-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="course-cont">
+      <h2 class="cont2-head">Batches</h2>
+      <div class="cont2">
+        <div class="tgt">
+          <div class="icon-cont">
+            <i class="fas fa-laptop"></i>
+          </div>
+          <div class="tgt-cont">
+            <button class="accordion" >Batch 1 - 8</button>
+            <div class="panel">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            </div>
+          </div>
+        </div>
+        <div class="tgt">
+          <div class="icon-cont">
+            <i class="fas fa-laptop"></i>
+          </div>
+          <div class="tgt-cont">
+            <button class="accordion" >Batch 9 - 12 </button>
+            <div class="panel">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            </div>
+          </div>
+        </div>
+        <div class="tgt">
+          <div class="icon-cont">
+            <i class="fas fa-laptop"></i>
+          </div>
+          <div class="tgt-cont">
+            <button class="accordion" >Batch 12 - UG </button>
+            <div class="panel">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="forum-cont">
+      <h3 class="heading" style="text-align:center;">Discussion Forum</h3>
+      <div class="diss-cont">
+        <div class="for-nm">
+          <div class="credt">
+            <div class="cmmnt-user-img">
+              <img src="images/user.jpg" class="cmmnt-img" alt="">
+            </div>
+          </div>
+          <div class="det">
+            <div class="nm-dt">
+              <div class="nm">Akash Pandey</div>
+              <div class="dt">22hrs ago</div>
+            </div>
+            <div class="diss-msg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+        </div>
+        <div class="for-nm">
+          <div class="credt">
+            <div class="cmmnt-user-img">
+              <img src="images/user.jpg" class="cmmnt-img" alt="">
+            </div>
+          </div>
+          <div class="det">
+            <div class="nm-dt">
+              <div class="nm">Unnati Jaiswal</div>
+              <div class="dt">2 days ago</div>
+            </div>
+            <div class="diss-msg">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+        <div class="for-nm">
+          <div class="credt">
+            <div class="cmmnt-user-img">
+              <img src="images/user.jpg" class="cmmnt-img" alt="">
+            </div>
+          </div>
+          <div class="det">
+            <div class="nm-dt">
+              <div class="nm">Aman Kesharwani</div>
+              <div class="dt">5 days ago</div>
+            </div>
+            <div class="diss-msg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              epteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
+        </div>
+        <div class="rd-mr">
+          <a target="_blank" href="forum.html">
+            <div class="">
+              Read More/Post a comment
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="pop-courses">
+      <h3 class="heading" style="text-align:center;">Popular Courses</h3>
+      <div class="cont-courses">
+        <div class="pop-1">
+          <div class="pop-img">
+             <img src="images/js.jpg" alt="javascript course">
+           </div>
+           <hr>
+          <div class="point-pop">
+            <ul>
+              <li>Benefit 1</li>
+              <li>Benefit 2</li>
+              <li>Benefit 3</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pop-2">
+          <div class="pop-img">
+            <img src="images/js.jpg" alt="javascript course">
+          </div>
+          <hr>
+          <div class="point-pop">
+            <ul>
+              <li>Benefit 1</li>
+              <li>Benefit 2</li>
+              <li>Benefit 3</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pop-3">
+          <div class="pop-img">
+             <img src="images/js.jpg" alt="javascript course">
+           </div>
+           <hr>
+          <div class="point-pop">
+            <ul>
+              <li>Benefit 1</li>
+              <li>Benefit 2</li>
+              <li>Benefit 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-cont">
+      <h3 style="text-align:center;">Contact us at</h3>
+      <div class="cont-info">
+        <div class="contact-card">
+          <h5 style="margin-left:2%;color:#DC203A">Inquiry Form</h5>
+          <input class="space name" placeholder="First Name" type="text" name="" value="">
+          <input class="space name" placeholder="Last Name" type="text" name="" value="">
+          <br>
+          <input class="space mail" placeholder="Mail address" type="mail" name="" value="">
+          <textarea class="space message" placeholder="Message" name="name" rows="8" cols="80"></textarea><br>
+          <input type="submit" class="msg-sent" name="" value="Send">
+        </div>
+        <div class="addr-mail">
+          <h2 style="margin-left:10%;">Reach us at:</h2>
+          <address class="addr">
+            <span class="mail-head">
+              Official Address :
+            </span>
+            <br>
+              123 jasra , go front with highway then turn right ,  211011
+          </address>
+          <div class="mail-addr">
+            <span class="mail-head">
+              <i class="fas fa-at"></i>
+            </span>
+            123@advancecoder.com
+            <br>
+            <span class="mail-head">
+              <i class="fas fa-phone-square-alt"></i>
+            </span>
+            1234567890
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      function removePopup() {
+        document.getElementById("op-popup").style.display = "none";
+      }
+      function loggin(){
+        document.getElementById("op-popup").style.display = "block";
+      }
+      function aboutSection() {
+        var elmnt = document.getElementById("about-cont");
+        elmnt.scrollIntoView();
+      }
+      function targetSection() {
+        var elmnt = document.getElementById("course-cont");
+        elmnt.scrollIntoView();
+      }
+      function courseSection() {
+        var elmnt = document.getElementById("pop-courses");
+        elmnt.scrollIntoView();
+      }
+      function forumSection() {
+        var elmnt = document.getElementById("forum-cont");
+        elmnt.scrollIntoView();
+      }
+      function contactSection() {
+        var elmnt = document.getElementById("contact-cont");
+        elmnt.scrollIntoView();
+      }
+      window.onscroll = function scrollFunction() {
+        var mybutton = document.getElementById("myBtn");
+         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+           mybutton.style.display = "block";
+         } else {
+           mybutton.style.display = "none";
+         }
+       }
+       function topFunction(){
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+       }
+       var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+    </script>
+  </body>
+</html>

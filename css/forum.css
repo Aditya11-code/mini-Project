@@ -1,0 +1,129 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.heading{
+  margin-left: 8%;
+}
+.post-cmmnt{
+  width:87%;
+  margin : 2% 5% 0% 8%;
+}
+#editor{
+  border:1px solid rgb(230,230,230);
+  height:150px;
+  font-size:14px;
+  letter-spacing:1px;
+}
+.post-btn{
+  background: #DC203A;
+  text-align: center;
+  transition: 0.2s all;
+}
+.post-btn:hover{
+  background: #1E8449;
+}
+.post-btn > button{
+  border: none;
+  outline: none;
+  background: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 8px 0px;
+  width: 100%;
+}
+.forum-1{
+  /* border:1px solid black; */
+  margin: 1% 5% 0% 8%;
+  /* display: flex; */
+}
+
+/* .cate-1{
+  width: 20%;
+  border: 1px solid red;
+} */
+.discussion{
+  /* border: 1px solid blue; */
+  width: 98%;
+  margin-left: 1%;
+}
+/* .cate-cates{
+  padding: 10px 0px ;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(240,240,240);
+  opacity: .9;
+}
+.cate-cates:hover{
+  opacity: 1;
+  border: 1px solid rgb(240,240,240);
+  background-color: rgb(250,250,250);
+} */
+.cmmnt{
+  /* border: 1px solid purple; */
+  background: rgb(254,254,254);
+  padding: 1% 0%;
+  border-bottom: 1px solid rgb(230,230,230);
+}
+.name-date{
+  display: flex;
+  font-weight: 700;
+  color: #1A5276 ;
+}
+.name{
+  padding-left: 15px;
+  width: 80%;
+  font-size: 17px;
+}
+.exp{
+  margin-top: 1%;
+  padding: 0px 15px;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: .5px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+@media only screen and (max-width:600px){
+  .post-cmmnt{
+    width:90%;
+    margin : 2% 5% 0% 5%;
+  }
+  .forum-1{
+    margin: 1% 5% 0% 5%;
+  }
+  .name{
+    font-size: 15px;
+  }
+  .exp{
+    font-size: 12px;
+    padding: 0px 8px;
+  }
+  .cmmnt{
+    padding: 0;
+  }
+}
+@media only screen and (max-width:400px) {
+  .post-cmmnt{
+    width:98%;
+    margin : 2% 1% 5% 1%;
+  }
+  .heading{
+    font-size: 24px;
+    margin-left: 2%;
+  }
+  .forum-1{
+    margin: 1% 1% 0% 1%;
+  }
+  .exp{
+    padding: 0px 3px;
+    line-height: 1.2rem;
+    padding-bottom: 5%;
+  }
+  .post-btn > button{
+    font-size: 13px;
+  }
+}
